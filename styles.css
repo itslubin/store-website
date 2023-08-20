@@ -87,7 +87,7 @@ a {
 #search input[type="text"] {
     border-radius: 10px;
     border: 1px solid #ccc;
-    width: 40%;
+    width: 524px;
     padding: 5px;
 }
 
@@ -202,3 +202,82 @@ footer .information{
     margin-bottom: 10px;
 }
 
+@media (max-width: 1306px) {
+
+    #header {
+        flex-direction: column;
+    }
+    #header .logo {
+        flex-basis: 100%;
+    }
+
+    #header #menu {
+        flex-basis: 100%;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width:820px) {
+    #header .logo h2 {
+        font-size: 100%;
+    }
+}
+
+@media (max-width:700px) {
+    #header #search input[type="text"] {
+        width: 250px;
+    }
+
+    #aside {
+        margin-right: 0px;
+    }
+
+    #aside ul {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    #aside ul li {
+        flex-grow: 1;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .product {
+        margin-left: 20px;
+    }
+
+    #content {
+        flex-direction: column;
+    }
+
+    #content #products {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 559px) {
+    #header .logo h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width:485px) {
+    #header .logo h2 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width:445px) {
+
+    #header #menu > ul{
+        justify-content: stretch;
+    }
+}
+
+@media (max-width:412px) {
+    #header .logo h2 {
+        font-size: 18px;
+    }
+}
