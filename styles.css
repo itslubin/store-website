@@ -12,7 +12,7 @@ a {
 }
 
 #container {
-    width: 90%;
+    width: 95%;
     height: auto;
     margin: 0px auto;
     border: 1px solid rgba(225, 225, 226, 0.8);
@@ -35,7 +35,7 @@ a {
 
 .logo {
     flex-grow: 1;
-    flex-basis: 65%;
+    flex-basis: 60%;
 
     font-size: 35px;
     padding: 10px;
@@ -56,7 +56,7 @@ a {
     flex-wrap: wrap;
     align-items: center;
     height: 100%;
-    justify-content: space-between;
+    justify-content: space-evenly;
     list-style: none;
 }
 
@@ -64,7 +64,7 @@ a {
     color: #444;
     text-transform: capitalize;
     padding: 15px;
-    font-size: large;
+    font-size: medium;
     transition: all 200ms;
     border-radius: 15px;
 }
@@ -73,6 +73,33 @@ a {
     background: #ccc;
     color: white;
     border-radius: 15px;
+    cursor: pointer;
+}
+
+#search {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 100%;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+#search input[type="text"] {
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    width: 40%;
+    padding: 5px;
+}
+
+#search img {
+    position: relative;
+    top: 3px;
+    height: 24px;
+    width: 24px;
+    margin-left: 10px;
+}
+
+#search img:hover {
     cursor: pointer;
 }
 
